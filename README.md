@@ -1,0 +1,2 @@
+# Júnior — Geek Store  Cliente: Júnior (Geek Store Comércio de Colecionáveis LTDA).  
+Objetivo: Controlar o estoque de colecionáveis e acelerar as vendas no caixa (PDV), contando com precificação dinâmica de escassez (tag "LAST ITEM" com acréscimo de +10% na última unidade), gestão de pré-vendas com sinal e Roleta de Desconto gamificada no fechamento.  
