@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+    background-color: #1A0B2E;
+    color: #00FF66;
+}
+
+header {
+    background-color: #0F051D;
+    color: #00FF66;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+header nav img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+main {
+    padding: 30px;
+}
+
+#introducao {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+    background-color: #0F051D;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#introducao article ul {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#introducao img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+#cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #0F051D;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00FF66;
+}
+
+#tabela-precos {
+    background-color: #0F051D;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#tabela-precos h2 {
+    color: #00FF66;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00FF66;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #9D00FF;
+    color: white;
+}
