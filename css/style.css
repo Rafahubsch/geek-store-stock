@@ -5,102 +5,256 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif
-    background-color: #1A0B2E;
-    color: #00FF66;
+    background-color: #090314;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: #0F051D;
-    color: #00FF66;
-    padding: 20px;
-    margin-bottom: 50px;
+    background-color: #120726;
+    display: flex;
+    padding: 15px 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00FF66;
+    box-shadow: 0 4px 20px rgba(0, 255, 102, 0.15);
 }
 
-header nav img {
-    max-width: 150px;
-    margin-bottom: 15px;
+.texto-pequeno {
+    color: #00FF66;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#titulo-header p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-badge {
+    background: #00FF66;
+    color: #090314;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+#menu-header {
+    display: flex;
+    gap: 20px;
+}
+
+#menu-header p {
+    color: #B8B2CE;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+#menu-header p:hover, #menu-header p.active {
+    color: #00FF66;
+    background: rgba(0, 255, 102, 0.1);
 }
 
 main {
-    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-#introducao {
+#hero {
+    background: linear-gradient(135deg, #1A0B2E 0%, #120726 100%);
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 30px;
-    background-color: #0F051D;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #2D1452;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
 }
 
-#introducao article ul {
-    margin-top: 15px;
-    margin-left: 20px;
+#texto-hero {
+    max-width: 55%;
 }
 
-#introducao img {
-    width: 350px;
-    height: 350px;
+#hero h1 {
+    font-size: 42px;
+    color: #00FF66;
+    margin: 12px 0;
+    line-height: 1.1;
+    text-shadow: 0 0 12px rgba(0, 255, 102, 0.2);
+}
+
+#hero p {
+    font-size: 16px;
+    color: #B8B2CE;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #00FF66;
+    color: #090314;
+    padding: 12px 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.7);
+}
+
+#img-hero img {
+    width: 320px;
+    height: 320px;
     object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid #00FF66;
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.2);
 }
 
-#cards {
+#galeria-texto {
+    margin-bottom: 20px;
+}
+
+#galeria-texto h2 {
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+#galeria-imgs {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 
 .card {
-    background-color: #0F051D;
-    padding: 20px;
-    width: 30%;
-    border-radius: 20px;
-    text-align: center;
+    background-color: #120726;
+    width: 31%;
+    border-radius: 12px;
+    border: 1px solid #2D1452;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
-.card img {
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #00FF66;
+    box-shadow: 0 10px 20px rgba(0, 255, 102, 0.15);
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 200px;
+}
+
+.card-img-wrapper img {
     width: 100%;
-    max-width: 500px;
-    border-radius: 20px;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
-.card p {
-    margin-top: 10px;
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(9, 3, 20, 0.85);
+    color: #00FF66;
+    border: 1px solid #00FF66;
+    font-size: 11px;
     font-weight: bold;
-    color: #00FF66;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
+.card article {
+    padding: 16px;
+}
+
+.card h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.card span {
+    color: #B8B2CE;
+    font-size: 13px;
+    display: block;
+    min-height: 36px;
+    line-height: 1.4;
+}
+
+.preco {
+    color: #00FF66;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* REGRAS DE CSS ACRESCENTADAS PARA A TABELA DE PREÇOS */
 #tabela-precos {
-    background-color: #0F051D;
-    padding: 20px;
-    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #120726;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #2D1452;
 }
 
-#tabela-precos h2 {
-    color: #00FF66;
-    margin-bottom: 15px;
+#tabela-texto {
+    margin-bottom: 20px;
+}
+
+#tabela-texto h2 {
+    color: #FFFFFF;
+    font-size: 28px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
 }
 
 th, td {
-    border: 1px solid #00FF66;
-    padding: 10px;
+    padding: 14px;
     text-align: left;
+    border-bottom: 1px solid #2D1452;
 }
 
 th {
-    background-color: #9D00FF;
-    color: white;
+    background-color: #1A0B2E;
+    color: #00FF66;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #B8B2CE;
+    font-size: 15px;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 255, 102, 0.05);
+}
+
+tbody td:last-child {
+    color: #00FF66;
+    font-weight: bold;
 }

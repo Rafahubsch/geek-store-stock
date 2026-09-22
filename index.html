@@ -1,86 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8"/>
-        <title>Geek Store</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <meta charset="UTF-8" />
+        <title>Geek Store 🎮</title>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <header>
-            <nav>
-                <img src="assets/oi]oo.png" alt="Logo Geek Store"/>
-            </nav>
-            <h1>Geek Store Colecionáveis</h1>
-            <p>PDV ultrarrápido, gestão de escassez e pré-vendas gamificadas.</p>
+            <section id="titulo-header">
+               <img src="assets/oi]oo.png" alt="Colecionáveis Geek Store" />
+                <p>Geek Store <span class="logo-badge">PRO</span></p>
+            </section>
+            <section id="menu-header">
+                <p class="active">Início</p>
+                <p>Produtos</p>
+                <p>Contato</p>
+            </section>
         </header>
 
         <main>
-            <section id="introducao">
-                <article>
-                    <h2>Objetivo do Sistema</h2>
-                    <p>Controlar o estoque de colecionáveis e acelerar as vendas no caixa (PDV), contando com precificação dinâmica de escassez (tag "LAST ITEM" com acréscimo de +10% na última unidade), gestão de pré-vendas com sinal e Roleta de Desconto gamificada.</p>
-                    <ul>
-                        <li>Cadastro detalhado de colecionáveis</li>
-                        <li>Tag LAST ITEM (+10% no valor)</li>
-                        <li>Reserva de pré-vendas com sinal (30%)</li>
-                        <li>Roleta de Desconto no Caixa</li>
-                        <li>Vale-troca via QR Code</li>
-                    </ul>
-                </article>
-
-                <img src="assets/i191291092.png" alt="Banner Geek Store"/>
+            <section id="hero">
+                <section id="texto-hero">
+                    <small class="texto-pequeno">Universo Gamer & Geek</small>
+                    <h1>Os melhores colecionáveis do planeta</h1>
+                    <p>Encontre Figures, HQs, Funkos e os colecionáveis mais raros do mercado!</p>
+                    <a href="#galeria" class="btn-hero">Explorar Loja 🔥</a>
+                </section>
+                <section id="img-hero">
+                    <img src="assets/image.png" alt="Colecionáveis Geek Store" />
+                </section>
             </section>
-            
-            <section id="cards">
-                <article class="card">
-                    <img src="https://picsum.photos/id/1025/400/300" alt="Action Figure Goku"/>
-                    <p>Action Figure Goku</p>
-                </article>
-                <article class="card">
-                    <img src="https://picsum.photos/id/1062/400/300" alt="Hot Toys Iron Man"/>
-                    <p>Hot Toys Iron Man</p>
-                </article>
-                <article class="card">
-                    <img src="https://picsum.photos/id/1069/400/300" alt="Funko Pop Luffy"/>
-                    <p>Funko Pop Luffy</p>
-                </article>
-                <article class="card">
-                    <img src="https://picsum.photos/id/1074/400/300" alt="HQ Berserk Vol 1"/>
-                    <p>HQ Berserk Vol 1</p>
-                </article>
-                <article class="card">
-                    <img src="https://picsum.photos/id/1084/400/300" alt="Estátua Zelda"/>
-                    <p>Estátua Zelda</p>
-                </article>
-                <article class="card">
-                    <img src="https://picsum.photos/id/1015/400/300" alt="Card Game Pokémon"/>
-                    <p>Card Game Pokémon</p>
-                </article>
+
+            <section id="galeria">
+                <section id="galeria-texto">
+                    <small class="texto-pequeno">Confira nosso estoque</small>
+                    <h2>Itens em destaque!!</h2>
+                </section>
+
+                <section id="galeria-imgs">
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">Dragon Ball</span>
+                            <img src="assets/naruto.png" alt="Action Figure Goku" />
+                        </div>
+                        <article>
+                            <h3>Action Figure Goku</h3>
+                            <span>Escala 1/6 com detalhes em alta precisão e base personalizada.</span>
+                            <p class="preco">R$ 450,00</p>
+                        </article>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">Marvel</span>
+                            <img src="https://images.unsplash.com/photo-1635863138275-d9b33299680b?q=80&w=500&auto=format&fit=crop" alt="Hot Toys Iron Man" />
+                        </div>
+                        <article>
+                            <h3>Hot Toys Iron Man</h3>
+                            <span>Armadura die-cast com iluminação LED e partes intercambiáveis.</span>
+                            <p class="preco">R$ 2.800,00</p>
+                        </article>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">One Piece</span>
+                            <img src="assets/funko.png" alt="Funko Pop Luffy" />
+                        </div>
+                        <article>
+                            <h3>Funko Pop Luffy</h3>
+                            <span>Edição especial de colecionador do futuro Rei dos Piratas.</span>
+                            <p class="preco">R$ 180,00</p>
+                        </article>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">Mangá</span>
+                            <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=500&auto=format&fit=crop" alt="HQ Berserk Vol 1" />
+                        </div>
+                        <article>
+                            <h3>HQ Berserk Vol 1</h3>
+                            <span>Edição de luxo com capa dura e conteúdo exclusivo.</span>
+                            <p class="preco">R$ 120,00</p>
+                        </article>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">Zelda</span>
+                            <img src="assets/esrt.png" alt="Estátua Zelda" />
+                        </div>
+                        <article>
+                            <h3>Estátua Zelda</h3>
+                            <span>Rica em detalhes, pintada à mão e licenciada oficialmente.</span>
+                            <p class="preco">R$ 890,00</p>
+                        </article>
+                    </section>
+
+                    <section class="card">
+                        <div class="card-img-wrapper">
+                            <span class="tag">Pokémon</span>
+                            <img src="https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?q=80&w=500&auto=format&fit=crop" alt="Card Game Pokémon" />
+                        </div>
+                        <article>
+                            <h3>Card Game Pokémon</h3>
+                            <span>Deck de batalha completo com cartas raras e reluzentes.</span>
+                            <p class="preco">R$ 150,00</p>
+                        </article>
+                    </section>
+                </section>
             </section>
 
             <section id="tabela-precos">
-                <h2>Preços dos Produtos</h2>
+                <section id="tabela-texto">
+                    <small class="texto-pequeno">Consulte os Valores</small>
+                    <h2>Tabela de Preços e Escassez</h2>
+                </section>
+                
                 <table>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço Normal</th>
-                        <th>Last Item (+10%)</th>
-                    </tr>
-                    <tr>
-                        <td>Figure Goku 1/6</td>
-                        <td>R$ 450,00</td>
-                        <td>R$ 495,00</td>
-                    </tr>
-                    <tr>
-                        <td>Iron Man Hot Toys</td>
-                        <td>R$ 2.800,00</td>
-                        <td>R$ 3.080,00</td>
-                    </tr>
-                    <tr>
-                        <td>Funko Pop Luffy</td>
-                        <td>R$ 180,00</td>
-                        <td>R$ 198,00</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço Normal</th>
+                            <th>Última Unidade (+10%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Action Figure Goku 1/6</td>
+                            <td>R$ 450,00</td>
+                            <td>R$ 495,00</td>
+                        </tr>
+                        <tr>
+                            <td>Hot Toys Iron Man</td>
+                            <td>R$ 2.800,00</td>
+                            <td>R$ 3.080,00</td>
+                        </tr>
+                        <tr>
+                            <td>Funko Pop Luffy</td>
+                            <td>R$ 180,00</td>
+                            <td>R$ 198,00</td>
+                        </tr>
+                        <tr>
+                            <td>HQ Berserk Vol 1</td>
+                            <td>R$ 120,00</td>
+                            <td>R$ 132,00</td>
+                        </tr>
+                        <tr>
+                            <td>Estátua Zelda</td>
+                            <td>R$ 890,00</td>
+                            <td>R$ 979,00</td>
+                        </tr>
+                        <tr>
+                            <td>Card Game Pokémon</td>
+                            <td>R$ 150,00</td>
+                            <td>R$ 165,00</td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
         </main>
